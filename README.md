@@ -1,10 +1,7 @@
-
-<img width="1280" height="721" alt="image" src="https://github.com/user-attachments/assets/e0974c47-e46d-4782-9d89-b13014b35adb" />
-<img width="1280" height="719" alt="image" src="https://github.com/user-attachments/assets/ccf0e28d-d7c7-4db4-870a-4c4fc5643723" />
-<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/7f41094d-1d9b-45a8-8787-109b1fb6a80d" />
-
 Данный скрипт представляет собой **статический вспомогательный класс `CameraCast`** (не являющийся компонентом UNIGINE), который обеспечивает централизованную функциональность для определения объекта, на который направлен луч (рейкастинг), управления подсветкой (outline) и хранения состояния «захваченного» объекта. Он служит связующим звеном между системами ввода (VR-контроллеры или мышь/клавиатура) и визуальной обратной связью, а также предоставляет другим компонентам актуальную информацию о текущем выбранном объекте.
 
+
+<img width="1280" height="721" alt="image" src="https://github.com/user-attachments/assets/e0974c47-e46d-4782-9d89-b13014b35adb" />
 **Основные возможности:**
 
 - **Определение объекта под лучом:**  
@@ -24,6 +21,10 @@
 
 - **Интеграция с `GetterModels` и `VRPlayer`:**  
   Класс инициализируется с экземпляром `GetterModels`, из которого получает ссылку на ноду игрока (`VRPlayer`), необходимую для работы камеры на ПК.
+
+  
+<img width="1280" height="719" alt="image" src="https://github.com/user-attachments/assets/ccf0e28d-d7c7-4db4-870a-4c4fc5643723" />
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/7f41094d-1d9b-45a8-8787-109b1fb6a80d" />
 
 **Зависимости:**  
 Для корректной работы требуется наличие на сцене компонента `VRPlayer` (прикреплённого к ноде игрока) и правильная настройка материалов с поддержкой состояний `auxiliary` и `auxiliary_btw`.
